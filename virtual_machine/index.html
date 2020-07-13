@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Virtual Machine - Compiladores</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/vmAllFiles.js"></script>
+</head>
+
+<body style="width: 100% !important; height: 100% !important; background-color: black;">
+
+    <!-- =========NAVBAR============= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-bottom: 1px solid #292b2c !important;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Virtual Machine</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+            </ul>
+            <label for='import_file' class="btn btn-success my-2 my-sm-0 text-dark">Import File</label>
+            <input id="import_file" type="file" accept=".obj" onchange="readText(this)">
+        </div>
+    </nav>
+    <!-- =========END NAVBAR========= -->
+
+    <div class="bg-dark" style="height: 53.5%;">
+        <div class="row">
+            <div class="col col-sm-1">
+                <div>
+                    <ul>
+                        <br>
+                        <i class="fas fa-play-circle fa-3x text-success" onclick="execute();"></i>
+                        <br>
+                        <br>
+                        <label>
+                            <input type="checkbox" class="form-check-input" id="checkbox_all" onclick="checkAll();">
+                            <i class="far fa-check-square fa-3x text-secondary" id="btn-check"
+                                onclick="checkAll();"></i>
+                        </label>
+                        <br>
+                        <br>
+                        <i class="fas fa-bug fa-3x text-secondary" id="btn-debug" onclick="debugControl();"></i>
+                    </ul>
+                </div>
+            </div>
+            <div class="table-wrapper-scroll-y my-custom-scrollbar col col-lg-6">
+                <table class="table table-striped table-dark mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">No.</th>
+                            <th scope="col">Instruction</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaInstrucoes">
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col col-lg-4 my-custom-scrollbar" style="background-color: #292b2c">
+                <ul class="text-white" id="tabelaMemoria">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: black; height: 40%;">
+        <p class="text-white" id="terminal">
+            &nbsp;>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
