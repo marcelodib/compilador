@@ -1,0 +1,16 @@
+programa test1;
+
+var a,b: inteiro;
+    x, y, m, z: booleano;
+
+inicio
+    b := 3;
+    a := 2;
+    se b > a
+    entao
+      inicio
+        x := y;
+        z := nao m;
+      fim;
+      b := 577;
+fim.

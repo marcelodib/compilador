@@ -1,0 +1,19 @@
+programa test1;
+
+
+var a,b,c: inteiro;
+
+procedimento analisa1;
+var a, x: inteiro;
+inicio
+  
+    x:= 0;
+  
+fim;
+
+inicio
+    analisa1;
+    b := 1;
+    escreva(b);
+    escreva(analisa1);
+fim.

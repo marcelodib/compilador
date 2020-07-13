@@ -1,0 +1,16 @@
+programa test1;
+
+var a,b: inteiro;
+    
+    funcao c :inteiro;
+        var a, x: inteiro;
+    inicio
+        a := 3;
+    fim;
+
+inicio
+    b := 1;
+    escreva(b);
+    escreva(c);
+    
+fim.
