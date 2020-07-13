@@ -1,0 +1,44 @@
+programa test1;
+
+var a,b,c,x,y: inteiro;
+    z,m,p: booleano;
+
+inicio
+    se b > (c+ a*a)
+    entao 
+      inicio
+        escreva(b);
+        z := (5 * b - (5 div a)) > (3 + (-4));
+        x := +9 + 4 * (c div 3) - (-b);
+      fim
+    senao escreva(c);
+    enquanto (((a + (-100)) + ((-b) * (+100))) div (a + (-b))) >= x
+    faca
+      x := y;
+      z := nao m;
+fim.
+
+
+programa test1;
+
+var a,b: inteiro;
+    
+    funcao c :inteiro;
+        var a, x: inteiro;
+    inicio
+	se b > (c+ a*a)
+    	entao 
+		inicio
+        	a := 3;
+			c := 1;
+		fim;
+	senao c := 1;
+	c := 1;
+    fim;
+
+inicio
+    b := 1;
+    escreva(b);
+    escreva(c);
+    
+fim.

@@ -1,0 +1,25 @@
+programa test1;
+
+var a,b: inteiro;
+    
+    funcao c :inteiro;
+        var a, x: inteiro;
+    inicio
+	b := 100;
+	a := 1;
+	se b > (30+ a*a)
+    	entao 
+		inicio
+        	a := 3;
+			c := 13;
+		fim;
+	senao c := 57;
+	c := 1;
+    fim;
+
+inicio
+    b := 7;
+    escreva(b);
+    escreva(c);
+    
+fim.

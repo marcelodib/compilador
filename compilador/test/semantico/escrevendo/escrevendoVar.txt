@@ -1,0 +1,10 @@
+programa test1;
+
+var a,b: inteiro;
+
+
+inicio
+    b := 1;
+    escreva(b);
+    
+fim.
