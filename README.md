@@ -7,3 +7,7 @@ Após finalizar o processo de compilação é gerado um arquivo com todo código
 # Máquina Virtual
 
 A máquina virtual aguarda a entrada de um arquivo assembly para executa-lo, possibilitando também que seja depurado instrução por instrução, ou com break points específicos.
+
+# Link para acesso
+
+https://marcelodib.github.io/compilador/
